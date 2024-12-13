@@ -1,0 +1,51 @@
+.booking-history {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+  }
+  
+  .tabs button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .tabs .active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .bookings-list {
+    margin-top: 20px;
+  }
+  
+  .booking-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .booking-id {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .pagination button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .pagination .active {
+    background: #007bff;
+    color: white;
+  }
+  

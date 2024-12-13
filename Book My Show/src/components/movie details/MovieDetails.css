@@ -1,0 +1,236 @@
+/* Main container */
+.main-container {
+  font-family: Arial, sans-serif;
+  color: #f1f1f1;
+  margin: 20px;
+  max-width: 100%;
+  margin-top: 120px;
+}
+
+/* Backdrop and inner container */
+.backdrop {
+  height: 550px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+  max-width: 100%;
+  height: 550px;
+}
+
+/* Image container */
+.image-container img {
+  margin-top: 30px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Details container */
+.details-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-container h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #ffdd57;
+}
+
+.rating-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.rating-container i {
+  color: #ffdd57;
+  margin-right: 8px;
+}
+
+.movie-info {
+  font-size: 1rem;
+  color: #cccccc;
+  margin: 10px 0;
+}
+
+#bt{
+  width: 30%;
+  background-color: #ff6347;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+/* button:hover {
+  background-color: #e5533d;
+} */
+
+/* Overview container */
+.overview-container {
+  margin-top: 40px;
+}
+
+.overview-title {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.overview-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .inner-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .image-container {
+    margin-bottom: 20px;
+  }
+  
+  .details-container h1 {
+    font-size: 2rem;
+  }
+  
+  .rating-container {
+    justify-content: center;
+  }
+  
+  .movie-info {
+    font-size: 0.9rem;
+  }
+  
+  button {
+    width: 100%;
+  }
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background: rgba(0, 0, 0, 0.7); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding:  10px 20px;
+  border-radius: 8px;
+  color: black;
+  width: 400px;
+  text-align: center;
+}
+
+.popup-languages, .popup-formats {
+  margin: 20px 0;
+}
+
+.popup-languages ul, .popup-formats ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.popup-languages button, .popup-formats button {
+  margin: 5px 0;
+}
+
+.popup-close {
+  padding: 0px 10px;
+  margin-top: 0px;
+  color: black;
+  border: none;
+  background-color: white;
+ font-size: 30px;
+  margin-left: 200px;
+  cursor: pointer;
+}
+
+.popup-close:hover{
+  background-color: white;
+}
+
+/* .popup-close:hover {
+  /* background: #c00; */
+   /* border-radius: 50%; */
+
+/* }  */
+
+.languageBtn button{
+  /* width: 30%; */
+  margin: 5px 10px;
+  border-radius: 40px;
+  border: none;
+  padding: 10px;
+}
+
+#BTN:hover{
+  background-color: none;
+  /* background-color: white; */
+  box-shadow: 0px 0px 5px gray;
+
+}
+
+.popup-formats button{
+  width: 20%;
+  margin: 5px 10px;
+  border-radius: 40px;
+  border: none;
+  padding: 10px;
+}
+
+.launguageclosebtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading{
+  text-align: start;
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+
+.launguageclosebtn p{
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.formatesandlang{
+  background-color: rgb(236, 243, 245);
+  padding: 10px 0px;
+}

@@ -1,0 +1,11 @@
+.MainMovies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Main h1{
+  text-align: center;
+  padding-top: 20px;
+  text-decoration: underline gray 2px;
+}
